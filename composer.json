@@ -1,0 +1,32 @@
+{
+  "name": "thsoft/app",
+  "description": "thsoft框架应用模板",
+  "type": "project",
+  "license": "Apache-2.0",
+  "minimum-stability": "dev",
+  "require":
+  {
+    "thsoft/framework": "dev-master"
+  },
+  "require-dev":
+  {
+  },
+  "autoload": {
+    "psr-4":
+    {
+      "app\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Hong Tu",
+      "email": "hayto@foxmail.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../framework/"
+    }
+  ]
+}
