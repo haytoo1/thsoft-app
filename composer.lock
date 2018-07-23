@@ -59,61 +59,6 @@
             "time": "2016-10-13T14:48:10+00:00"
         },
         {
-            "name": "psr/container",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/container.git",
-                "reference": "2cc4a01788191489dc7459446ba832fa79a216a7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/2cc4a01788191489dc7459446ba832fa79a216a7",
-                "reference": "2cc4a01788191489dc7459446ba832fa79a216a7",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Container\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
-                }
-            ],
-            "description": "Common Container Interface (PHP FIG PSR-11)",
-            "homepage": "https://github.com/php-fig/container",
-            "keywords": [
-                "PSR-11",
-                "container",
-                "container-interface",
-                "container-interop",
-                "psr"
-            ],
-            "time": "2017-06-28T15:35:32+00:00"
-        },
-        {
             "name": "psr/http-message",
             "version": "dev-master",
             "source": {
@@ -262,13 +207,12 @@
             "dist": {
                 "type": "path",
                 "url": "../framework",
-                "reference": "3ffdbb2ad3d44a2b96c5cd0b29c8dc2df5594227",
+                "reference": "0c95184c692a3488b1df826a753acbd1b04f30a3",
                 "shasum": null
             },
             "require": {
                 "php": ">=7.1.3",
                 "psr/cache": ">=1.0.1",
-                "psr/container": ">=1.0.0",
                 "psr/http-message": ">=1.0.1",
                 "psr/log": ">=1.0.2",
                 "swoft/swoole-ide-helper": "dev-master"
