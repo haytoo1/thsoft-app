@@ -6,7 +6,17 @@
  * Time: 21:37
  */
 
-$map = new \Ds\Map();
-$map->put("a", '我是a');
-$map->remove("a");
-$map->remove("a");
+for ($i =0; $i<3; $i++){
+    $process = new \Swoole\Process(function (\Swoole\Process $process)use($i){
+        cli_set_process_title("swooleprocess-{$i}");
+//        while (1){
+            echo $process->read();
+//        }
+
+        sleep(5);
+        $process->close();
+
+    });
+    $process->write("task:{$i}\r\n");
+    $process->start();
+}
