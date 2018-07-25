@@ -13,7 +13,7 @@ class 亚洲{
     }
 }
 
-class 芮成钢{
+class 芮成钢之哔哔代理{
     /**
      * @var A object
      */
@@ -22,15 +22,37 @@ class 芮成钢{
     {
         $this->被代表的对象 = $object;
     }
-
-    public function 哔哔()
+    public function invoke($action)
     {
         echo "我想我可以代表亚洲:";
-        $this->被代表的对象->哔哔();
+        $this->被代表的对象->$action();
+    }
+}
+
+class 总统之权利代理{
+    /**
+     * @var Website
+     */
+    private $被代表的对象;
+
+    public function __construct(芮成钢之哔哔代理 $object)
+    {
+        $this->被代表的对象 = $object;
+    }
+    public function invoke($action)
+    {
+        echo "我想我可以代表你爸爸打你:";
+        $this->被代表的对象->$action();
     }
 }
 
 
 $y = new 亚洲();
-$r = new 芮成钢($y);
-$r->哔哔();
+// 被各种代理夹带私货
+$r = new 芮成钢之哔哔代理($y);
+$r->invoke('哔哔');
+
+$r1 = new 总统之权利代理($y);
+$r1->invoke('哔哔');
+
+
