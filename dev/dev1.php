@@ -6,17 +6,31 @@
  * Time: 21:37
  */
 
-for ($i =0; $i<3; $i++){
-    $process = new \Swoole\Process(function (\Swoole\Process $process)use($i){
-        cli_set_process_title("swooleprocess-{$i}");
-//        while (1){
-            echo $process->read();
-//        }
-
-        sleep(5);
-        $process->close();
-
-    });
-    $process->write("task:{$i}\r\n");
-    $process->start();
+class 亚洲{
+    public function 哔哔()
+    {
+        echo "吃饭";
+    }
 }
+
+class 芮成钢{
+    /**
+     * @var A object
+     */
+    private $被代表的对象;
+    public function __construct(object $object)
+    {
+        $this->被代表的对象 = $object;
+    }
+
+    public function 哔哔()
+    {
+        echo "我想我可以代表亚洲:";
+        $this->被代表的对象->哔哔();
+    }
+}
+
+
+$y = new 亚洲();
+$r = new 芮成钢($y);
+$r->哔哔();
