@@ -7,20 +7,10 @@
  * @author too <hayto@foxmail.com>
  */
 
-define('ROOT', __DIR__);
-require ROOT. '/../vendor/autoload.php';
-require ROOT. '/../vendor/thsoft/framework/src/Thsoft.php';
-$config = require ROOT. '/../app/http/conf/main.php';
+require __DIR__. '/../vendor/autoload.php';
+
+$config = require __DIR__. '/../app/http/conf/main.php';
 
 
 $app = new \Thsoft\base\Application($config);
-
-//$obj = \Thsoft\Thsoft::$container->get(\app\http\testdi\Car::class);
-//$obj = \Thsoft\Thsoft::$container->get(\app\http\testdi\Car::class);
-//var_dump($obj);
-var_dump($app->car);die;
-//var_dump($app->run());
-//die;
-//var_dump();
-var_dump($app);die;
-$app->run();
+var_dump($app);

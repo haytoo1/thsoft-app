@@ -8,17 +8,15 @@
  */
 
 return [
-    'server'=>[
-        'host'=>'0.0.0.0',
-        'port'=>1943,
-        /*'config'=>[
+    'basePath' => dirname(__DIR__),
 
-        ]*/
-    ],
     'components'=>[
         'car'=>[
             'class'=>\app\http\testdi\Car::class,
-//            'con'
+            'construct'=>[\app\http\testdi\WheelB::class],
+            'config'=>[
+                'age'=>18
+            ],
         ]
         /*'request'=>[
             'class'=>'',

@@ -18,13 +18,15 @@ class Car extends BaseObject
      * @var Wheel|null
      */
     public $wheel = null;
-    public function __construct(WheelInterface $wheel)
+    public function __construct(WheelA $wheel)
     {
         $this->wheel = $wheel;
     }
 
     public function run()
     {
-        return "Car can run use {$this->wheel->brand}";
+        return "Car can run use {$this->wheel->brand}, age is {$this->age}";
     }
+
+    public $age;
 }
