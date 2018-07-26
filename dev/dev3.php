@@ -13,11 +13,10 @@ $s = microtime(true);
 
 $n= 1000000;
 
-//$map = new \Ds\Map();
-$map = new \Ds\Set();
+$map = new \Ds\Map();
 //$map = [];
 for ($i=0; $i<$n; $i++){
-    $map->add($i);
+    $map->put($i, $i);
 //    $map[$i] = $i;
 }
 for ($i=0; $i<$n-1; $i++){

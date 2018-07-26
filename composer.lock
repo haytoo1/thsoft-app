@@ -315,7 +315,7 @@
             "dist": {
                 "type": "path",
                 "url": "../framework",
-                "reference": "8868fe8d649004577f6117534ed5eb5184e66399",
+                "reference": "20486667618e07c75b7918f8d322fcc9223fd49c",
                 "shasum": null
             },
             "require": {

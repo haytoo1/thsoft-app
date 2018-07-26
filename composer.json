@@ -6,7 +6,8 @@
   "minimum-stability": "dev",
   "require":
   {
-    "thsoft/framework": "dev-master"
+    "thsoft/framework": "dev-master",
+    "php-ds/tests": "dev-master"
   },
   "require-dev":
   {
