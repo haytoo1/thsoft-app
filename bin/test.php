@@ -11,6 +11,5 @@ require __DIR__. '/../vendor/autoload.php';
 
 $config = require __DIR__. '/../app/http/conf/main.php';
 
-
 $app = new \Thsoft\base\Application($config);
 var_dump($app);
