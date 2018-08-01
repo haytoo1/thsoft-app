@@ -9,7 +9,11 @@
 
 require __DIR__. '/../vendor/autoload.php';
 
-$config = require __DIR__. '/../app/http/conf/main.php';
+//$config = require __DIR__. '/../app/http/conf/main.php';
 
-$app = new \Thsoft\base\Application($config);
-var_dump($app);
+/*$app = new \Thsoft\base\Application($config);
+var_dump($app);*/
+
+$container = new \Thsoft\di\Container();
+$obj = $container->make(\app\http\testdi\Car::class);
+//var_dump($obj);

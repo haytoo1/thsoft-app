@@ -14,13 +14,16 @@ use Thsoft\base\BaseObject;
 
 class Car extends BaseObject
 {
+    public $name;
+    public $age;
     /**
      * @var Wheel|null
      */
     public $wheel = null;
-    public function __construct(WheelA $wheel)
+    public function __construct(WheelA $wheel, $name, $age=18)
     {
         $this->wheel = $wheel;
+
     }
 
     public function run()
@@ -28,5 +31,4 @@ class Car extends BaseObject
         return "Car can run use {$this->wheel->brand}, age is {$this->age}";
     }
 
-    public $age;
 }
