@@ -6,8 +6,7 @@
   "minimum-stability": "dev",
   "require":
   {
-    "thsoft/framework": "dev-master",
-    "illuminate/container": "^5.8@dev"
+    "thsoft/framework": "dev-master"
   },
   "require-dev":
   {
