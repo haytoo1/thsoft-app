@@ -6,7 +6,7 @@
  * Time: 23:06
  */
 
-namespace app\controllers;
+namespace apps\http\controllers;
 
 class DemoController
 {
