@@ -262,7 +262,7 @@
             "dist": {
                 "type": "path",
                 "url": "../framework",
-                "reference": "6082263dd715179f5e5723db6b4d498932726bc0",
+                "reference": "13d06d81a0623a13dacc21748f1191700c760cab",
                 "shasum": null
             },
             "require": {
